@@ -4,11 +4,13 @@ import Razorpay from "razorpay";
 import cors from "cors";
 import paymentRoute from "./routes/paymentRoutes.js";
 import auth from "./routes/auth.js";
+import http from "http";
 import { connectDB } from "./config/database.js";
 
 config({ path: "./config/config.env" });
 
 const app = express();
+const server = http.createServer(app);
 
 // Connect to the database
 connectDB();
@@ -37,6 +39,6 @@ app.get("/", (req, res) => {
 });
 
 const port = process.env.PORT || 3000;
-app.listen(port, () =>
-  console.log(`Server is working on ${port}`)
-);
+server.listen(port, () => {
+    console.log(`App listening at http://localhost:${port}`);
+  });
