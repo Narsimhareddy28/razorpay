@@ -48,7 +48,7 @@ const Body = () => {
           <h3>Contact Us</h3>
           <a href="contact" target="_blank" rel="noopener noreferrer">United States</a>
           <a href="tel: +1 000 000 0000">200-000-0000</a>
-          <a href="mailto: ppppppp@gmail.com">Little@gmail.com</a>
+          <a href="mailto: ppppppp@gmail.com">StudyStrideFoundation@gmail.com</a>
         </div>
         <div className="social">
           <h3>Support</h3>

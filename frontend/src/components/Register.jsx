@@ -30,7 +30,7 @@ function Register() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:4000/api/auth/createuser', {
+            const response = await axios.post('https://razorpay-mu-lilac.vercel.app/api/auth/createuser', {
                 name: playerName,
                 email: email,
                 password: password

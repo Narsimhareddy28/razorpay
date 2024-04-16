@@ -23,9 +23,9 @@ const Donate = () => {
       return;
     }
     try {
-      const { data: { key } } = await axios.get("http://localhost:4000/api/getkey");
+      const { data: { key } } = await axios.get("https://razorpay-mu-lilac.vercel.app/api/getkey");
       
-      const { data: { order } } = await axios.post("http://localhost:4000/api/checkout", {
+      const { data: { order } } = await axios.post("https://razorpay-mu-lilac.vercel.app/api/checkout", {
         amount: donationAmount
       });
 
@@ -33,14 +33,14 @@ const Donate = () => {
         key,
         amount: 3000,
         currency: "INR",
-        name: "Little Heart Foundation",
+        name: "Study Stride Foundation",
         description: "Donation for charity",
         image: "../assets/logo.png",
         order_id: order.id,
-        callback_url: "http://localhost:4000/api/paymentverification",
+        callback_url: "https://razorpay-mu-lilac.vercel.app/api/paymentverification",
         prefill: {
           name: "",
-          email: "littleheart@gmail.com",
+          email: "StudyStrideFoundation@gmail.com",
           contact: "9999999999"
         },
         notes: {
