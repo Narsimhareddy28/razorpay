@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from "./Home";
+// import Home from "./Home";
 import PaymentSuccess from "./PaymentSuccess";
 import Navbarr from "./components/Navbar.jsx";
 import Body from './components/Body.jsx';

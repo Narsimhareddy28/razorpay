@@ -20,7 +20,7 @@ function Navbar() {
         <div className='navcontainer'>
           <div className='logonav'>
           <a href="/"> <img src={logo} alt="" className='img' /></a> 
-            <p>Little Heart Foundation </p>
+            <p>Study Stride Foundation </p>
           </div>
 
           <div className='navelements'>

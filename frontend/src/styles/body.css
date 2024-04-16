@@ -80,12 +80,13 @@ body
 /*------------------------------------------------MAIN----------------------------------------*/
 .main
 {
-    background-image: url("../assets/back.jpg");
+    background-image: url("../assets/back1.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 130vh;
+    opacity: 0.8;
 }
 .main .main_content
 {

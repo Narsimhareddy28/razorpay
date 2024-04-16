@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/api", paymentRoute);
 // app.use('/api/auth', require('./routes/auth'));
 app.use('/api/auth', auth);
-
+app.get("/", (req, res) => res.send("API is running"));
 app.get("/api/getkey", (req, res) =>
   res.status(200).json({ "key": "rzp_test_j9in5uw2tvdckP"})
 );
