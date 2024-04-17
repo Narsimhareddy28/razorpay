@@ -25,8 +25,7 @@ const Body = () => {
         <div className="right">
           <h2>HELP A CHILD TODAY</h2>
           <p>
-            Service to man is service to God. Charity Jet cares for needy children by empowering their caregivers to do their best work, with compassion, grace, integrity and excellence. Our end goal is to support children worldwide and see every child reach the potential that God has for them.
-          </p>
+          "Education is the most powerful weapon which you can use to change the world." - Nelson Mandela          </p>
           <div className="side_btn">
             <a href="/donate">JOIN US TODAY</a>
           </div>
